@@ -5,18 +5,16 @@
 * {
   font-family: NanumGothic;
 }
-html {
+html, body{
   font-size: 15px;
   height: 100%;
-
+  overflow-x: hidden;
 }
 body {
   margin: 0;
   display: grid;
 }
-div {
 
-}
 a {
   color: #000000;
   text-decoration: none;
@@ -27,9 +25,13 @@ a:hover{
   cursor: pointer;
 }
 /* 네비게이션 영역 */
+.navbar {
+  overflow-x: hidden;
+}
 .navbar-default{  /* 네비게이션 배경 색상 변경 */
   background-color: #53bbb8;
   margin-bottom: 50px;
+  border: 0;
 }
 .navbar-default .navbar-nav > li > a {  /*네비게이션 글씨 색상 변경 */
   color:white;
@@ -86,7 +88,6 @@ a:hover{
 /* 컨테이너 영역 */
 .container {
   margin: 0 auto;
-  margin-bottom:
   display: grid;
   height: 100%;
   align-items: center;
@@ -132,7 +133,7 @@ footer .row .col-md-4{
   margin-left: 20px;
 }
 
-@media (max-width:767px) {  /* 해상도가 작을 때 드랍다운 아이템에 마우스를 올렸을 때 */
+@media (max-width:749px) {  /* 해상도가 작을 때 드랍다운 아이템에 마우스를 올렸을 때 */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: white;
   }
@@ -142,6 +143,7 @@ footer .row .col-md-4{
   }
   .container .row .col-md-4 {
     float: left;
+    padding: 2px;
   }
   .container .row .col-md-4 > p {
     display: inline;
